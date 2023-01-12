@@ -12,12 +12,12 @@ public class HelloController {
     @GetMapping("hello")
     public String hello(Model model){
         model.addAttribute("data", "hello!!");
-        return "hello1.html";
+        return "hello1";
     }
 
     @GetMapping("login")
     public String login(Model model){
         model.addAttribute("data", "login완료");
-        return "/LoginPage/login.html";
+        return "/LoginPage/login";
     }
 }
